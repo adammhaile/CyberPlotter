@@ -1,0 +1,35 @@
+No drivers are required to use Smoothie on OSX and Linux. 
+
+However on Linux a few things will make your life easier ( but are not required/necessary ).
+
+Here is a copy of the http://smoothieware.org/linux-drivers page : 
+
+
+This is optional, but makes things more convenient…
+
+create a file /etc/udev/rules.d/90-smoothie.rules and add the following to it…
+
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="6015", MODE="0666"
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="6015", SYMLINK+="smoothie%n"
+
+under fedora, smoothieboard is handled by the modem manager (as an openmoko).
+To avoid this , add in the udev rule :
+
+    ENV{ID_MM_DEVICE_IGNORE}="1"
+
+Then plug in Smoothie, and it should appear as /dev/smoothie0
+if you have two USB serial devices configured the second one will be /dev/smoothie1
+
+if you want to be able to talk to the /dev/smoothie0 with your regular non-superuser login then you need to add your user to the dialout group.
+To be able to flash via DFU as a regular user then add the user to the plugdev group too
+This can be done either with.
+
+    sudo adduser <username> dialout
+    sudo adduser <username> plugdev
+
+or
+
+    sudo vigr
+
+and add the username to the end of the line for dialout and plugdev
+
