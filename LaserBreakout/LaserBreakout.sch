@@ -139,4 +139,19 @@ NoConn ~ 3900 3750
 NoConn ~ 3100 3850
 NoConn ~ 3100 3750
 NoConn ~ 3100 3650
+$Comp
+L Device:R_Small_US R1
+U 1 1 5EA20099
+P 3100 3200
+F 0 "R1" H 3168 3246 50  0000 L CNN
+F 1 "10K" H 3168 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3100 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3100 1    35   Input ~ 0
+GND
+Wire Wire Line
+	3100 3300 3100 3550
 $EndSCHEMATC

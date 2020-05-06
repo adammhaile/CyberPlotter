@@ -47,71 +47,10 @@ F 5 "Molex Mini-Fit Jr 2x2 Series 5566" H 3450 4550 50  0001 C CNN "Desc"
 	1    3450 4550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5E954147
-P 2450 3650
-F 0 "J1" H 2368 3967 50  0000 C CNN
-F 1 "SignalA" H 2368 3876 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 2450 3650 50  0001 C CNN
-F 3 "~" H 2450 3650 50  0001 C CNN
-	1    2450 3650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 5E9560A2
-P 4550 3650
-F 0 "J5" H 4630 3642 50  0000 L CNN
-F 1 "SignalB" H 4630 3551 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 4550 3650 50  0001 C CNN
-F 3 "~" H 4550 3650 50  0001 C CNN
-	1    4550 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5E957B7A
-P 3450 5200
-F 0 "J4" V 3322 4912 50  0000 R CNN
-F 1 "Power" V 3413 4912 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 3450 5200 50  0001 C CNN
-F 3 "~" H 3450 5200 50  0001 C CNN
-	1    3450 5200
-	0    -1   1    0   
-$EndComp
 Text GLabel 3100 3550 0    35   Input ~ 0
 1
-Text GLabel 3100 3650 0    35   Input ~ 0
-2
-Text GLabel 3100 3750 0    35   Input ~ 0
-3
-Text GLabel 3100 3850 0    35   Input ~ 0
-4
-Text GLabel 3900 3550 2    35   Input ~ 0
-5
-Text GLabel 3900 3650 2    35   Input ~ 0
-6
-Text GLabel 3900 3750 2    35   Input ~ 0
-7
 Text GLabel 3900 3850 2    35   Input ~ 0
 GND
-Text GLabel 4350 3850 0    35   Input ~ 0
-GND
-Text GLabel 4350 3750 0    35   Input ~ 0
-7
-Text GLabel 4350 3650 0    35   Input ~ 0
-6
-Text GLabel 4350 3550 0    35   Input ~ 0
-5
-Text GLabel 2650 3850 2    35   Input ~ 0
-4
-Text GLabel 2650 3750 2    35   Input ~ 0
-3
-Text GLabel 2650 3650 2    35   Input ~ 0
-2
-Text GLabel 2650 3550 2    35   Input ~ 0
-1
 Text GLabel 3250 4550 0    35   Input ~ 0
 GND
 Text GLabel 3250 4650 0    35   Input ~ 0
@@ -120,14 +59,6 @@ Text GLabel 3750 4650 2    35   Input ~ 0
 24V
 Text GLabel 3750 4550 2    35   Input ~ 0
 5V
-Text GLabel 3350 5000 1    35   Input ~ 0
-GND
-Text GLabel 3450 5000 1    35   Input ~ 0
-5V
-Text GLabel 3550 5000 1    35   Input ~ 0
-12V
-Text GLabel 3650 5000 1    35   Input ~ 0
-24V
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E9547C8
@@ -185,4 +116,42 @@ Connection ~ 4700 4700
 Wire Wire Line
 	5000 4700 5300 4700
 Connection ~ 5000 4700
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5E95346B
+P 2500 3650
+F 0 "J1" H 2418 3967 50  0000 C CNN
+F 1 "LASER_CONN" H 2418 3876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2500 3650 50  0001 C CNN
+F 3 "~" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2700 3550 2    35   Input ~ 0
+1
+Text GLabel 2700 3650 2    35   Input ~ 0
+GND
+Text GLabel 2700 3750 2    35   Input ~ 0
+12V
+NoConn ~ 3900 3550
+NoConn ~ 3900 3650
+NoConn ~ 3900 3750
+NoConn ~ 3100 3850
+NoConn ~ 3100 3750
+NoConn ~ 3100 3650
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EA20099
+P 3100 3200
+F 0 "R?" H 3168 3246 50  0000 L CNN
+F 1 "10K" H 3168 3155 50  0000 L CNN
+F 2 "" H 3100 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3100 1    35   Input ~ 0
+GND
+Wire Wire Line
+	3100 3300 3100 3550
 $EndSCHEMATC

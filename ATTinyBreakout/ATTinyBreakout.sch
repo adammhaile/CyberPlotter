@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+LIBS:ATTinyBreakout-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 949:949 J2
+U 1 1 5E952BC7
+P 3100 3550
+F 0 "J2" H 3500 3815 50  0000 C CNN
+F 1 "949" H 3500 3724 50  0000 C CNN
+F 2 "949:949" H 3750 3650 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=14078" H 3750 3550 50  0001 L CNN
+F 4 "Modular Connectors / Ethernet Connectors RJ45 JACK VERTICAL PCB MOUNT THM" H 3750 3450 50  0001 L CNN "Description"
+F 5 "16.29" H 3750 3350 50  0001 L CNN "Height"
+F 6 "Keystone Electronics" H 3750 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "949" H 3750 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "534-949" H 3750 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=534-949" H 3750 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3750 2850 50  0001 L CNN "RS Part Number"
+F 11 "" H 3750 2750 50  0001 L CNN "RS Price/Stock"
+F 12 "36-949-ND" H 3100 3550 50  0001 C CNN "DK_PN"
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 5E95382E
+P 3450 4550
+F 0 "J3" H 3500 4767 50  0000 C CNN
+F 1 "MiniFitPower" H 3500 4676 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical" H 3450 4550 50  0001 C CNN
+F 3 "~" H 3450 4550 50  0001 C CNN
+F 4 "WM3801-ND" H 3450 4550 50  0001 C CNN "DK_PN"
+F 5 "Molex Mini-Fit Jr 2x2 Series 5566" H 3450 4550 50  0001 C CNN "Desc"
+	1    3450 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3550 0    35   Input ~ 0
+1
+Text GLabel 3900 3850 2    35   Input ~ 0
+GND
+Text GLabel 3250 4550 0    35   Input ~ 0
+GND
+Text GLabel 3250 4650 0    35   Input ~ 0
+12V
+Text GLabel 3750 4650 2    35   Input ~ 0
+24V
+Text GLabel 3750 4550 2    35   Input ~ 0
+5V
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E9547C8
+P 950 2100
+F 0 "H1" H 1050 2103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1050 2058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 950 2100 50  0001 C CNN
+F 3 "~" H 950 2100 50  0001 C CNN
+	1    950  2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E954AB6
+P 1250 2100
+F 0 "H2" H 1350 2103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1350 2058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1250 2100 50  0001 C CNN
+F 3 "~" H 1250 2100 50  0001 C CNN
+	1    1250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E954DBF
+P 1550 2100
+F 0 "H3" H 1650 2103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1650 2058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1550 2100 50  0001 C CNN
+F 3 "~" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E9550BB
+P 1850 2100
+F 0 "H4" H 1950 2103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1950 2058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1850 2100 50  0001 C CNN
+F 3 "~" H 1850 2100 50  0001 C CNN
+	1    1850 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  2200 0    35   Input ~ 0
+GND
+Wire Wire Line
+	850  2200 950  2200
+Wire Wire Line
+	950  2200 1250 2200
+Connection ~ 950  2200
+Wire Wire Line
+	1550 2200 1250 2200
+Connection ~ 1250 2200
+Wire Wire Line
+	1550 2200 1850 2200
+Connection ~ 1550 2200
+NoConn ~ 3900 3550
+NoConn ~ 3900 3650
+NoConn ~ 3900 3750
+NoConn ~ 3100 3850
+NoConn ~ 3100 3750
+NoConn ~ 3100 3650
+$Comp
+L Device:R_Small_US R1
+U 1 1 5EA20099
+P 3100 3200
+F 0 "R1" H 3168 3246 50  0000 L CNN
+F 1 "10K" H 3168 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3100 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3100 1    35   Input ~ 0
+GND
+Wire Wire Line
+	3100 3300 3100 3550
+$Comp
+L IRFZ44NPBF:IRFZ44NPBF U1
+U 1 1 5EA2038D
+P 4600 3300
+F 0 "U1" H 4762 3346 50  0000 L CNN
+F 1 "IRFZ44N" H 4762 3255 50  0000 L CNN
+F 2 "IRFZ44:TO-220" H 4600 3300 50  0001 L BNN
+F 3 "" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 5EA21B37
+P 5150 2650
+F 0 "D1" H 5150 2434 50  0000 C CNN
+F 1 "1N4007" H 5150 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5150 2475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Embedded-Microcontrollers:ATTINY85-20PU U2
+U 1 1 5EA229F5
+P 5850 4200
+F 0 "U2" H 5750 4550 60  0000 L CNN
+F 1 "ATTINY85-20PU" V 6100 3800 60  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 4400 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" H 6050 4500 60  0001 L CNN
+F 4 "ATTINY85-20PU-ND" H 6050 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "ATTINY85-20PU" H 6050 4700 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6050 4800 60  0001 L CNN "Category"
+F 7 "Embedded - Microcontrollers" H 6050 4900 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" H 6050 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469" H 6050 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MCU 8BIT 8KB FLASH 8DIP" H 6050 5200 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 6050 5300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6050 5400 60  0001 L CNN "Status"
+	1    5850 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 4300 0    35   Input ~ 0
+1
+Text GLabel 5650 4400 0    35   Input ~ 0
+OUT
+Text GLabel 4300 3300 0    35   Input ~ 0
+OUT
+$Comp
+L Device:R_Small_US R2
+U 1 1 5EA23EA2
+P 4300 3050
+F 0 "R2" H 4368 3096 50  0000 L CNN
+F 1 "10K" H 4368 3005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 4300 3050 50  0001 C CNN
+F 3 "~" H 4300 3050 50  0001 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3150 4300 3300
+Text GLabel 4300 2950 1    35   Input ~ 0
+GND
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5EA25481
+P 4400 4650
+F 0 "JP1" H 4400 4763 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 4400 4854 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4400 4650 50  0001 C CNN
+F 3 "~" H 4400 4650 50  0001 C CNN
+	1    4400 4650
+	-1   0    0    1   
+$EndComp
+Text GLabel 4200 4650 0    35   Input ~ 0
+12V
+Text GLabel 4600 4650 2    35   Input ~ 0
+24V
+Text GLabel 2850 1800 0    35   Input ~ 0
+OUT
+Text GLabel 2850 1900 0    35   Input ~ 0
+5V
+Text GLabel 2850 2000 0    35   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5EA2C2EF
+P 3050 2000
+F 0 "J1" H 3130 2042 50  0000 L CNN
+F 1 "Conn_01x05" H 3130 1951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3050 2000 50  0001 C CNN
+F 3 "~" H 3050 2000 50  0001 C CNN
+	1    3050 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 3100 1    35   Input ~ 0
+SOL_GND
+Text GLabel 4400 4500 1    35   Input ~ 0
+SOL_PWR
+Text GLabel 5000 2650 0    35   Input ~ 0
+SOL_GND
+Text GLabel 5300 2650 2    35   Input ~ 0
+SOL_PWR
+Text GLabel 2850 2100 0    35   Input ~ 0
+SOL_GND
+Text GLabel 2850 2200 0    35   Input ~ 0
+SOL_PWR
+Text GLabel 4600 3500 3    35   Input ~ 0
+GND
+$Comp
+L Device:C C1
+U 1 1 5EA2DD33
+P 6300 4250
+F 0 "C1" H 6415 4296 50  0000 L CNN
+F 1 "0.1uF" H 6415 4205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6338 4100 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 5EA2FD64
+P 5850 3250
+F 0 "J4" H 5900 3567 50  0000 C CNN
+F 1 "ICSP" H 5900 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 5850 3250 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 3150 0    35   Input ~ 0
+MISO
+Text GLabel 5650 4200 0    35   Input ~ 0
+SCK
+Text GLabel 5650 3350 0    35   Input ~ 0
+RST
+Text GLabel 6150 3150 2    35   Input ~ 0
+5V
+Text GLabel 6150 3350 2    35   Input ~ 0
+GND
+Text GLabel 6150 3250 2    35   Input ~ 0
+MOSI
+Text GLabel 5650 4500 0    35   Input ~ 0
+RST
+Text GLabel 5650 4100 0    35   Input ~ 0
+MISO
+Text GLabel 5650 4000 0    35   Input ~ 0
+MOSI
+Wire Wire Line
+	5950 3800 6300 3800
+Wire Wire Line
+	6300 3800 6300 4100
+Wire Wire Line
+	5950 4700 6300 4700
+Wire Wire Line
+	6300 4700 6300 4400
+Text GLabel 5950 4700 3    35   Input ~ 0
+GND
+Text GLabel 5950 3800 1    35   Input ~ 0
+5V
+Text GLabel 5650 3250 0    35   Input ~ 0
+SCK
+$EndSCHEMATC

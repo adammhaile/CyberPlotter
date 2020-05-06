@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 949)(type Legacy)(uri ${KIPRJMOD}/../libs/Keystone949/949.lib)(options "")(descr ""))
+  (lib (name IRFZ44NPBF)(type Legacy)(uri ${KIPRJMOD}/../libs/IRFZ44/IRFZ44NPBF.lib)(options "")(descr ""))
+)

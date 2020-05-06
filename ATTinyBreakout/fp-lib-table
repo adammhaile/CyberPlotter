@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name 949)(type Legacy)(uri G:/dev/Plotinator/libs/Keystone949/949.mod)(options "")(descr ""))
+  (lib (name IRFZ44)(type KiCad)(uri ${KIPRJMOD}/../libs/IRFZ44)(options "")(descr ""))
+)

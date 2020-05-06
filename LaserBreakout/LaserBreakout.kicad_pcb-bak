@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 10)
+    (drawings 16)
     (tracks 21)
     (zones 0)
     (modules 7)
@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (user_trace_width 1.5)
@@ -171,6 +171,11 @@
       (net 2 GND))
     (pad 9 thru_hole circle (at -1.235 6.35 90) (size 1.625 1.625) (drill 3.25) (layers *.Cu *.Mask F.SilkS))
     (pad 10 thru_hole circle (at 10.195 6.35 90) (size 1.625 1.625) (drill 3.25) (layers *.Cu *.Mask F.SilkS))
+    (model ${KIPRJMOD}/../libs/Keystone949/949.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical (layer F.Cu) (tedit 5B781992) (tstamp 5E95808C)
@@ -240,10 +245,10 @@
       (net 4 12V))
     (pad 4 thru_hole oval (at 4.2 5.5 180) (size 2.7 3.3) (drill 1.4) (layers *.Cu *.Mask)
       (net 5 24V))
-    (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/../libs/039281043.stp
+      (offset (xyz 2.1 -2.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 180))
     )
   )
 
@@ -400,7 +405,7 @@
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
     (path /5E95346B)
-    (fp_text reference J1 (at 0 -2.33 90) (layer F.SilkS)
+    (fp_text reference J1 (at 0 -2.33 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value LASER_CONN (at 0 7.41 90) (layer F.Fab)
@@ -437,6 +442,24 @@
     )
   )
 
+  (gr_text GND (at 119.38 73.66 90) (layer B.SilkS) (tstamp 5E958865)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text 12V (at 121.92 73.66 90) (layer B.SilkS) (tstamp 5E958864)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text PWM (at 116.84 73.66 90) (layer B.SilkS) (tstamp 5E958863)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text 12V (at 121.92 73.66 90) (layer F.SilkS) (tstamp 5E95885A)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text GND (at 119.38 73.66 90) (layer F.SilkS) (tstamp 5E958858)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text PWM (at 116.84 73.66 90) (layer F.SilkS) (tstamp 5E958850)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text POWER (at 131.318 83.058 180) (layer F.SilkS) (tstamp 5E958DD7)
     (effects (font (size 1 1) (thickness 0.15)))
   )
