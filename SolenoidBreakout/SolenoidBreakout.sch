@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SolenoidBreakout-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -273,7 +272,7 @@ F 3 "~" H 3300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Tactile-Switches:1825910-7 S1
+L SolenoidBreakout-rescue:1825910-7-dk_Tactile-Switches S1
 U 1 1 5EC7000A
 P 2800 3600
 F 0 "S1" H 2800 3947 60  0000 C CNN

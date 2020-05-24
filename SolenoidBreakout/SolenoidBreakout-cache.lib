@@ -118,9 +118,9 @@ $FPLIST
  D*DO?41*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -210,7 +210,9 @@ F1 "Jumper_Jumper_3_Open" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- SolderJumper*Open*
+ Jumper*
+ TestPoint*3Pads*
+ TestPoint*Bridge*
 $ENDFPLIST
 DRAW
 A -65 -30 89 1282 518 0 1 0 N -120 40 -10 40
@@ -241,11 +243,11 @@ X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_Tactile-Switches_1825910-7
+# SolenoidBreakout-rescue_1825910-7-dk_Tactile-Switches
 #
-DEF dk_Tactile-Switches_1825910-7 S 0 40 Y Y 1 F N
+DEF SolenoidBreakout-rescue_1825910-7-dk_Tactile-Switches S 0 40 Y Y 1 F N
 F0 "S" 0 180 60 H V C CNN
-F1 "dk_Tactile-Switches_1825910-7" 0 -225 60 H V C CNN
+F1 "SolenoidBreakout-rescue_1825910-7-dk_Tactile-Switches" 0 -225 60 H V C CNN
 F2 "digikey-footprints:Switch_Tactile_THT_6x6mm" 200 200 60 H I L CNN
 F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
 F4 "450-1804-ND" 200 400 60 H I L CNN "Digi-Key_PN"
