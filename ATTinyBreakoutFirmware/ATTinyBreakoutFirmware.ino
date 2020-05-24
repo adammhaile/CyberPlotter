@@ -1,5 +1,3 @@
-#include "SmoothADC.h"
-
 #define IN 3 // A3
 #define OUT 4
 
@@ -11,8 +9,6 @@
     #define ON HIGH
     #define OFF LOW
 #endif
-
-SmoothADC ADC_IN;
 
 void setup()
 {
@@ -30,8 +26,6 @@ void loop()
     {
         digitalWrite(OUT, OFF); 
     }
-    // digitalWrite(OUT, ON);
-    // delay(500);
-    // digitalWrite(OUT, OFF);
-    // delay(500);
+
+    delay(1);
 }
