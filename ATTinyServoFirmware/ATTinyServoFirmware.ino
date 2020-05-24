@@ -3,8 +3,8 @@
 #define IN 3 // A3
 #define OUT 4
 
-#define POS_OFF 0
-#define POS_ON  30
+#define POS_OFF 30
+#define POS_ON  0
 
 Servo servo;
 
