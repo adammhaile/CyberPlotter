@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ATTinyBreakout-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -160,7 +159,7 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5150 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L dk_Embedded-Microcontrollers:ATTINY85-20PU U2
+L ATTinyBreakout-rescue:ATTINY85-20PU-dk_Embedded-Microcontrollers U2
 U 1 1 5EA229F5
 P 5850 4200
 F 0 "U2" H 5750 4550 60  0000 L CNN
@@ -298,4 +297,25 @@ Text GLabel 5950 4700 3    35   Input ~ 0
 GND
 Text GLabel 5950 3800 1    35   Input ~ 0
 5V
+Text GLabel 5650 3250 0    35   Input ~ 0
+SCK
+$Comp
+L Device:R_POT_TRIM_US RV1
+U 1 1 5EE2B379
+P 5000 4150
+F 0 "RV1" H 4933 4196 50  0000 R CNN
+F 1 "TrimPot" H 4933 4105 50  0000 R CNN
+F 2 "" H 5000 4150 50  0001 C CNN
+F 3 "~" H 5000 4150 50  0001 C CNN
+	1    5000 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 4000 1    35   Input ~ 0
+5V
+Text GLabel 5000 4300 3    35   Input ~ 0
+GND
+Wire Wire Line
+	5150 4150 5650 4150
+Wire Wire Line
+	5650 4150 5650 4200
 $EndSCHEMATC

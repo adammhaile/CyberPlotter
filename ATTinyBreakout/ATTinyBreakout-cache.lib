@@ -27,6 +27,35 @@ X 8 8 800 -300 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
+# ATTinyBreakout-rescue_ATTINY85-20PU-dk_Embedded-Microcontrollers
+#
+DEF ATTinyBreakout-rescue_ATTINY85-20PU-dk_Embedded-Microcontrollers U 0 1 Y Y 1 F N
+F0 "U" -112 340 60 H V L CNN
+F1 "ATTinyBreakout-rescue_ATTINY85-20PU-dk_Embedded-Microcontrollers" 120 -450 60 H V L CNN
+F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 300 60 H I L CNN
+F4 "ATTINY85-20PU-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "ATTINY85-20PU" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Embedded - Microcontrollers" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC MCU 8BIT 8KB FLASH 8DIP" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -100 300 200 -400 0 1 0 f
+X PB5 1 -200 -300 100 R 50 50 1 1 B
+X PB3 2 -200 -100 100 R 50 50 1 1 B
+X PB4 3 -200 -200 100 R 50 50 1 1 B
+X GND 4 100 -500 100 U 50 50 1 1 W
+X PB0 5 -200 200 100 R 50 50 1 1 B
+X PB1 6 -200 100 100 R 50 50 1 1 B
+X PB2 7 -200 0 100 R 50 50 1 1 B
+X VCC 8 100 400 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_01x05
 #
 DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
@@ -120,6 +149,30 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_R_POT_TRIM_US
+#
+DEF Device_R_POT_TRIM_US RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT_TRIM_US" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 2 0 1 0 60 30 60 -30 N
+P 2 0 1 0 100 0 60 0 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_Small_US
 #
 DEF Device_R_Small_US R 0 10 N N 1 F N
@@ -150,9 +203,9 @@ $FPLIST
  D*DO?41*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -246,35 +299,6 @@ $ENDFPLIST
 DRAW
 C 0 50 50 0 1 50 N
 X 1 1 0 -100 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# dk_Embedded-Microcontrollers_ATTINY85-20PU
-#
-DEF dk_Embedded-Microcontrollers_ATTINY85-20PU U 0 1 Y Y 1 F N
-F0 "U" -112 340 60 H V L CNN
-F1 "dk_Embedded-Microcontrollers_ATTINY85-20PU" 120 -450 60 H V L CNN
-F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
-F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 300 60 H I L CNN
-F4 "ATTINY85-20PU-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "ATTINY85-20PU" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Embedded - Microcontrollers" 200 700 60 H I L CNN "Family"
-F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC MCU 8BIT 8KB FLASH 8DIP" 200 1000 60 H I L CNN "Description"
-F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -100 300 200 -400 0 1 0 f
-X PB5 1 -200 -300 100 R 50 50 1 1 B
-X PB3 2 -200 -100 100 R 50 50 1 1 B
-X PB4 3 -200 -200 100 R 50 50 1 1 B
-X GND 4 100 -500 100 U 50 50 1 1 W
-X PB0 5 -200 200 100 R 50 50 1 1 B
-X PB1 6 -200 100 100 R 50 50 1 1 B
-X PB2 7 -200 0 100 R 50 50 1 1 B
-X VCC 8 100 400 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
