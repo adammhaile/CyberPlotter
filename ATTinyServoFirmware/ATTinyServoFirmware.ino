@@ -5,7 +5,7 @@
 #define OUT 4
 
 #define POS_OFF 0
-#define POS_ON  30
+#define POS_ON_MAX 170
 
 #define FILTER_COUNT 8
 #define FILTER_MIN   0.75
@@ -27,7 +27,6 @@ void loop()
     static int pos;
     static float val;
     static int adj_val;
-    static int on_pos;
     static int i;
 
     val = 0.0;
@@ -44,7 +43,8 @@ void loop()
 
     if(val >= FILTER_MIN)
     {
-        pos = POS_ON;
+
+        pos = map(adj_val, 0, 1023, POS_ON_MAX, POS_OFF);;
     }
     else
     {
