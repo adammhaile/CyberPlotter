@@ -3,8 +3,12 @@
 #define IN 3 // A3
 #define OUT 4
 
-#define POS_OFF 30
-#define POS_ON  0
+#define POS_OFF 0
+#define POS_ON  30
+
+#define FILTER_COUNT 8
+#define FILTER_MIN   0.75
+#define FILTER_DELAY 5
 
 Servo servo;
 
@@ -15,16 +19,35 @@ void setup()
     servo.write(POS_OFF);
 }
 
+
 void loop()
 {
-    if(digitalRead(IN))
+    static int last_pos = 255;
+    static int pos;
+    static float val;
+    static int i;
+
+    val = 0.0;
+    for(i=0; i<FILTER_COUNT; i++)
     {
-        servo.write(POS_ON);
+        val += static_cast<float>(digitalRead(IN));
+        delay(FILTER_DELAY);
+    }
+
+    val = val / FILTER_COUNT;
+
+    if(val >= FILTER_MIN)
+    {
+        pos = POS_ON;
     }
     else
     {
-        servo.write(POS_OFF);
+        pos = POS_OFF;
     }
-    
-    delay(10);
+
+    if(pos != last_pos)
+    {
+        servo.write(pos);
+        last_pos = pos;
+    }
 }
