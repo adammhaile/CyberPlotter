@@ -15,6 +15,7 @@ Servo servo;
 
 void setup()
 {
+    pinMode(ADJ_IN, INPUT);
     pinMode(IN, INPUT);
     servo.attach(OUT);
     servo.write(POS_OFF);
